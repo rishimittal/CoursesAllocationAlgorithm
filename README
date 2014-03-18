@@ -1,0 +1,48 @@
+Problem Courses Allocation Algorithm
+
+LSR College offers a great deal of varied courses to its students. However, allocation, this
+time was a mayhem, and for that reason their administrative staff approached ICS231 to get
+this problem solved. Before we get into details, here is the structure of any course in LSR.
+
+1. Each course allows up to 60 students to enroll.
+2. Each course belongs to one of 4 group, also known as Knowledge Spectrum. For eg.
+Commerce,Humanities, Management, Arts etc.
+3. Each course allows a certain quota to respective branch of students. For eg. M.Com,
+PHD, B.Com etc.
+(Here Quota defines maximum number of people from each branch that can enroll to
+any course )
+
+Students too have a structure.
+
+1. Each student belongs to one of four branch, i.e M.Com, PHD, B.Com and Arts.
+2. Each student can take exactly 4 courses in one semester.
+3. Each student is allowed to make a list of preferences to the courses they like, such that
+size of list is 8.
+
+Now Administrative head of LSR have asked us to impose certain criterias
+
+1. Each student must pick at least one course from each Knowledge spectrum, i.e
+Commerce, Arts etc.
+2. Each student should get 4 courses from the preference of 8.
+3. Quota for each branch is in ratio 1:1:2:1 i.e out of 60 students, 12 belong to M.com,
+12 to PHD, 24 to B.com
+and 12 to Arts
+
+Your task is to write an suitable algorithm, which maintains certain data-structure for the
+process of allocation.
+
+For eg. Queues. You can think of a distributed or centralized approach to this problem. Both
+approaches will work, and have their pits and falls. In case, of starvation, i.e when some
+student doesn't get their 4 opted courses, you have to report that student. You can generate
+preference on random, and #of courses can be equally divided into 4 knowledge spectrum.
+Branch capacity can be determined by the quota mentioned above
+
+
+Input
+./a.out <#of students> <#of courses>
+
+Output
+Report the students who got left.(Print it to stdout)
+Write allocation in a file name allocation.txt, with each course number containing number of
+actual students who enrolled into it.
+
